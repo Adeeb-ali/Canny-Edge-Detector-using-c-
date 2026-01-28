@@ -10,7 +10,6 @@ g++ -c morphology/dilation.cpp -o build/dilation.o
 g++ -c morphology/erosion.cpp -o build/erosion.o
 
 step2.ar rcs build/libedge.a build/im_mat.o build/mat_im.o build/gussian.o build/sobel.o build/nms.o build/threshold.o build/hy.o build/dilation.o build/erosion.o
-ar rcs build/libedge.a build/im_mat.o build/mat_im.o build/gussian.o build/sobel.o build/nms.o build/threshold.o build/hy.o build/dilation.o build/erosion.o
 
 step3.
 g++ main.cpp build/libedge.a -o edge_app
